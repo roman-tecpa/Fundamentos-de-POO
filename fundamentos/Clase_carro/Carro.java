@@ -84,31 +84,34 @@ public class Carro {
     }
 
     public static void main(String[] args) {
-        Carro Carro1 = new Carro();
+        Carro Carro1 =  new Carro();
+		System.out.println("ESTE ES EL CARRO 1");
+		Carro1.setAnio(2000);
+		Carro1.setColor("Rosa");
+		Carro1.setModelo("Nissan GTR");
+		
+		System.out.println("AÑO DEL CARRO" + Carro1.getAnio());
+		System.out.println("COLOR DEL CARRO: "+Carro1.getColor());
+		System.out.println("MODELO DE CARRO: "+Carro1.getModelo()+ "\n");
+		
+		
+		Carro Carro2 = new Carro();
 
-        Carro1.setAnio(2000);
-        Carro1.setColor("Rosa");
-        Carro1.setModelo("Nissan GTR");
-
-        System.out.println(Carro1.getAnio());
-        System.out.println(Carro1.getColor());
-        System.out.println(Carro1.getModelo() + "\n");
-
-        Carro Carro2 = new Carro();
-        Carro2.setAnio(2019);
-        Carro2.setCilindros(4);
-        Carro2.setModelo("Tsuru");
-        System.out.println(Carro2.getAnio());
-        System.out.println(Carro2.getCilindros());
-        System.out.println(Carro2.getModelo() + "\n");
-
-        Carro Carro3 = new Carro();
-
-        Carro3.setMarca("Chevrolet");
-        Carro3.setPlacas("74-08-RA");
-        Carro3.setPuertas(4);
-        System.out.println(Carro3.getMarca());
-        System.out.println(Carro3.getPlacas());
-        System.out.println(Carro3.getPuertas());
+		System.out.println("ESTE ES EL CARRO 2");
+		Carro2.setAnio(2019);
+		Carro2.setCilindros(4);
+		Carro2.setModelo("Tsuru");
+		System.out.println("AÑO DEL CARRO: "+Carro1.getAnio());
+		System.out.println("NUMERO DE CILINDROS DEL CARRO: "+Carro1.getCilindros());
+		System.out.println("MODELO DE CARRO: "+Carro1.getModelo()+ "\n");
+		
+		Carro Carro3 = new Carro();
+		System.out.println("ESTE ES EL CARRO 3");
+		Carro3.setMarca("Chevrolet");
+		Carro3.setPlacas("74-08-RA");
+		Carro3.setPuertas(4);
+		System.out.println("MARCA DEL CARRO: "+Carro3.getMarca());
+		System.out.println("PLACAS DEL CARRO: "+Carro3.getPlacas());
+		System.out.println("NUMERO DE PUERTAS DEL CARRO: "+Carro3.getPuertas());
     }
 }
